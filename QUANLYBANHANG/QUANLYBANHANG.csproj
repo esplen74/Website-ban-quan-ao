@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D0E3E47-73C9-4D6F-A428-EBA38CDEB578}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QUANLYBANHANG</RootNamespace>
+    <AssemblyName>QUANLYBANHANG</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="App_Data\dbQUANLYBANHANG.mdf" />
+    <Content Include="App_Data\dbQUANLYBANHANG_log.ldf">
+      <DependentUpon>dbQUANLYBANHANG.mdf</DependentUpon>
+    </Content>
+    <Content Include="cart.html" />
+    <Content Include="ChangePassword.html" />
+    <Content Include="checkout.html" />
+    <Content Include="contact-us.html" />
+    <Content Include="CSS\all.css" />
+    <Content Include="CSS\baguetteBox.min.css" />
+    <Content Include="CSS\bootsnav.css" />
+    <Content Include="CSS\bootstrap-select.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\carousel-ticker.css" />
+    <Content Include="CSS\code_animate.css" />
+    <Content Include="CSS\custom.css" />
+    <Content Include="CSS\jquery-ui.css" />
+    <Content Include="CSS\main.css" />
+    <Content Include="CSS\nestedsidemenu.css" />
+    <Content Include="CSS\owl.carousel.min.css" />
+    <Content Include="CSS\responsive.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="CSS\superslides.css" />
+    <Content Include="CSS\util.css" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="IMAGES\Grimm.jpg" />
+    <Content Include="IMAGES\LogoLuxxuDenngan.png" />
+    <Content Include="IMAGES\about-img.jpg" />
+    <Content Include="IMAGES\all-bg-title.jpg" />
+    <Content Include="IMAGES\ANHDAIDIEN.jpg" />
+    <Content Include="IMAGES\apple-touch-icon.png" />
+    <Content Include="IMAGES\banner-01.jpg" />
+    <Content Include="IMAGES\banner-02.jpg" />
+    <Content Include="IMAGES\banner-03.jpg" />
+    <Content Include="IMAGES\big-img-02.jpg" />
+    <Content Include="IMAGES\big-img-03.jpg" />
+    <Content Include="IMAGES\blog-img-01.jpg" />
+    <Content Include="IMAGES\blog-img-02.jpg" />
+    <Content Include="IMAGES\blog-img.jpg" />
+    <Content Include="IMAGES\favicon.ico" />
+    <Content Include="IMAGES\HOODIE.jpg" />
+    <Content Include="IMAGES\ins-bg.jpg" />
+    <Content Include="IMAGES\instagram-img-01.jpg" />
+    <Content Include="IMAGES\instagram-img-02.jpg" />
+    <Content Include="IMAGES\instagram-img-03.jpg" />
+    <Content Include="IMAGES\instagram-img-04.jpg" />
+    <Content Include="IMAGES\instagram-img-05.jpg" />
+    <Content Include="IMAGES\instagram-img-06.jpg" />
+    <Content Include="IMAGES\instagram-img-07.jpg" />
+    <Content Include="IMAGES\instagram-img-08.jpg" />
+    <Content Include="IMAGES\instagram-img-09.jpg" />
+    <Content Include="IMAGES\JACKET.jpeg" />
+    <Content Include="IMAGES\JACKET1.jpg" />
+    <Content Include="IMAGES\JACKET2.jpg" />
+    <Content Include="IMAGES\JACKET3.jpeg" />
+    <Content Include="IMAGES\logo.png" />
+    <Content Include="IMAGES\LOGO2Hand.png" />
+    <Content Include="IMAGES\LOGOSHOP.png" />
+    <Content Include="IMAGES\onepice.jpg" />
+    <Content Include="IMAGES\PANTS.jpg" />
+    <Content Include="IMAGES\payment-icon\1.png" />
+    <Content Include="IMAGES\payment-icon\2.png" />
+    <Content Include="IMAGES\payment-icon\3.png" />
+    <Content Include="IMAGES\payment-icon\5.png" />
+    <Content Include="IMAGES\payment-icon\7.png" />
+    <Content Include="IMAGES\Polo1.png" />
+    <Content Include="IMAGES\Polo2.jpg" />
+    <Content Include="IMAGES\polo3.jpg" />
+    <Content Include="IMAGES\SadBoizHD.jpg" />
+    <Content Include="IMAGES\sale.jpg" />
+    <Content Include="IMAGES\shirt-img.jpg" />
+    <Content Include="IMAGES\SHIRT.jpg" />
+    <Content Include="IMAGES\SHIRT1.jpg" />
+    <Content Include="IMAGES\SHIRT2.jpg" />
+    <Content Include="IMAGES\SHIRT3.jpeg" />
+    <Content Include="IMAGES\SHIRT3.jpg" />
+    <Content Include="IMAGES\SHIRT5.jpg" />
+    <Content Include="IMAGES\SHIRT6.jpg" />
+    <Content Include="IMAGES\shoes-img.jpg" />
+    <Content Include="IMAGES\SHORT.jpg" />
+    <Content Include="IMAGES\smp-img-01.jpg" />
+    <Content Include="IMAGES\smp-img-02.jpg" />
+    <Content Include="IMAGES\smp-img-03.jpg" />
+    <Content Include="IMAGES\t-shirts-img.jpg" />
+    <Content Include="IMAGES\TEE.jpg" />
+    <Content Include="IMAGES\TEE1.jpg" />
+    <Content Include="IMAGES\TEE2.jpg" />
+    <Content Include="IMAGES\TEE3.jpg" />
+    <Content Include="IMAGES\welcome little one! %282%29.png" />
+    <Content Include="index.html" />
+    <Content Include="js\baguetteBox.min.js" />
+    <Content Include="js\bootsnav.js" />
+    <Content Include="js\bootstrap-select.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact-form-script.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\form-validator.min.js" />
+    <Content Include="js\images-loded.min.js" />
+    <Content Include="js\inewsticker.js" />
+    <Content Include="js\isotope.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.nicescroll.min.js" />
+    <Content Include="js\jquery.superslides.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="MENU.html" />
+    <Content Include="my-account.html" />
+    <Content Include="pageCHITIET.aspx" />
+    <Content Include="pageDANHSACHSANPHAM.aspx" />
+    <Content Include="pageGIOHANG.aspx" />
+    <Content Include="pageLogin.aspx" />
+    <Content Include="pageRegister.aspx" />
+    <Content Include="polo3.jpg" />
+    <Content Include="QUANTRI\assets\css\main-style.css" />
+    <Content Include="QUANTRI\assets\css\style.css" />
+    <Content Include="QUANTRI\assets\font-awesome\css\font-awesome.css" />
+    <Content Include="QUANTRI\assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="QUANTRI\assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="QUANTRI\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="QUANTRI\assets\img\logo.png" />
+    <Content Include="QUANTRI\assets\img\LOGOSHOP.png" />
+    <Content Include="QUANTRI\assets\img\user.jpg" />
+    <Content Include="QUANTRI\assets\plugins\bootstrap\bootstrap.css" />
+    <Content Include="QUANTRI\assets\plugins\bootstrap\bootstrap.js" />
+    <Content Include="QUANTRI\assets\plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="QUANTRI\assets\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="QUANTRI\assets\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="QUANTRI\assets\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="QUANTRI\assets\plugins\flot\excanvas.min.js" />
+    <Content Include="QUANTRI\assets\plugins\flot\jquery.flot.js" />
+    <Content Include="QUANTRI\assets\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="QUANTRI\assets\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="QUANTRI\assets\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="QUANTRI\assets\plugins\jquery-1.10.2.js" />
+    <Content Include="QUANTRI\assets\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="QUANTRI\assets\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="QUANTRI\assets\plugins\morris\morris.js" />
+    <Content Include="QUANTRI\assets\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="QUANTRI\assets\plugins\pace\pace-theme-big-counter.css" />
+    <Content Include="QUANTRI\assets\plugins\pace\pace.js" />
+    <Content Include="QUANTRI\assets\plugins\social-buttons\social-buttons.css" />
+    <Content Include="QUANTRI\assets\plugins\timeline\timeline.css" />
+    <Content Include="QUANTRI\assets\scripts\dashboard-demo.js" />
+    <Content Include="QUANTRI\assets\scripts\flot-demo.js" />
+    <Content Include="QUANTRI\assets\scripts\morris-demo.js" />
+    <Content Include="QUANTRI\assets\scripts\siminta.js" />
+    <Content Include="QUANTRI\blank.html" />
+    <Content Include="QUANTRI\buttons.html" />
+    <Content Include="QUANTRI\Chat.css" />
+    <Content Include="QUANTRI\Chat.html" />
+    <Content Include="QUANTRI\Chat.js" />
+    <Content Include="QUANTRI\Chatbox\Chat.css" />
+    <Content Include="QUANTRI\Chatbox\Chat.js" />
+    <Content Include="QUANTRI\css\main.css" />
+    <Content Include="QUANTRI\css\normalize.css" />
+    <Content Include="QUANTRI\css\normalize.min.css" />
+    <Content Include="QUANTRI\DEMO.aspx" />
+    <Content Include="QUANTRI\error.html" />
+    <Content Include="QUANTRI\favicon.ico" />
+    <Content Include="QUANTRI\flot.html" />
+    <Content Include="QUANTRI\forms.html" />
+    <Content Include="QUANTRI\grid.html" />
+    <Content Include="QUANTRI\IMAGES\1.png" />
+    <Content Include="QUANTRI\IMAGES\2.png" />
+    <Content Include="QUANTRI\IMAGES\2Handshoplogoden-removebg-preview.png" />
+    <Content Include="QUANTRI\IMAGES\cat_eyes_blue_143433_3844x2400.jpg" />
+    <Content Include="QUANTRI\IMAGES\floor.jpg" />
+    <Content Include="QUANTRI\IMAGES\LOGOTRANGDAI.png" />
+    <Content Include="QUANTRI\IMAGES\4.png" />
+    <Content Include="QUANTRI\IMAGES\BANNERADMIN.png" />
+    <Content Include="QUANTRI\IMAGES\LoginADmin.jpg" />
+    <Content Include="QUANTRI\IMAGES\my.jpg" />
+    <Content Include="QUANTRI\IMAGES\welcome little one! %283%29.png" />
+    <Content Include="QUANTRI\index.html" />
+    <Content Include="QUANTRI\js\main.js" />
+    <Content Include="QUANTRI\js\vendor\html5shiv.js" />
+    <Content Include="QUANTRI\js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="QUANTRI\js\vendor\jquery.easytabs.min.js" />
+    <Content Include="QUANTRI\js\vendor\jquery.hashchange.min.js" />
+    <Content Include="QUANTRI\login.html" />
+    <Content Include="QUANTRI\MenuDink.html" />
+    <Content Include="QUANTRI\morris.html" />
+    <Content Include="QUANTRI\notifications.html" />
+    <Content Include="QUANTRI\pageAdmin.aspx" />
+    <Content Include="QUANTRI\pageDANHMUC.aspx" />
+    <Content Include="QUANTRI\pagelogin.aspx" />
+    <Content Include="QUANTRI\pageQUANLYSANPHAM.aspx" />
+    <Content Include="QUANTRI\panels-wells.html" />
+    <Content Include="QUANTRI\QUANLINGUOIDUNG.aspx" />
+    <Content Include="QUANTRI\robots.txt" />
+    <Content Include="QUANTRI\tables.html" />
+    <Content Include="QUANTRI\timeline.html" />
+    <Content Include="QUANTRI\typography.html" />
+    <Content Include="resetpassword.html" />
+    <Content Include="service.html" />
+    <Content Include="shopnews.html" />
+    <Content Include="USERMASTERPAGE.html" />
+    <Content Include="shop-detail.html" />
+    <Content Include="vendor\animate\animate.css" />
+    <Content Include="vendor\animsition\css\animsition.css" />
+    <Content Include="vendor\animsition\css\animsition.min.css" />
+    <Content Include="vendor\animsition\js\animsition.js" />
+    <Content Include="vendor\animsition\js\animsition.min.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\js\popper.js" />
+    <Content Include="vendor\bootstrap\js\popper.min.js" />
+    <Content Include="vendor\bootstrap\js\tooltip.js" />
+    <Content Include="vendor\countdowntime\countdowntime.js" />
+    <Content Include="vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="vendor\daterangepicker\moment.js" />
+    <Content Include="vendor\daterangepicker\moment.min.js" />
+    <Content Include="vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="vendor\select2\select2.css" />
+    <Content Include="vendor\select2\select2.js" />
+    <Content Include="vendor\select2\select2.min.css" />
+    <Content Include="vendor\select2\select2.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="wishlist.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\CartItem.cs" />
+    <Compile Include="App_Code\ShoppingCart.cs" />
+    <Compile Include="App_Code\XULYDULIEU.cs" />
+    <Compile Include="pageCHITIET.aspx.cs">
+      <DependentUpon>pageCHITIET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageCHITIET.aspx.designer.cs">
+      <DependentUpon>pageCHITIET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageDANHSACHSANPHAM.aspx.cs">
+      <DependentUpon>pageDANHSACHSANPHAM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageDANHSACHSANPHAM.aspx.designer.cs">
+      <DependentUpon>pageDANHSACHSANPHAM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageGIOHANG.aspx.cs">
+      <DependentUpon>pageGIOHANG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageGIOHANG.aspx.designer.cs">
+      <DependentUpon>pageGIOHANG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageLogin.aspx.cs">
+      <DependentUpon>pageLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageLogin.aspx.designer.cs">
+      <DependentUpon>pageLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageRegister.aspx.cs">
+      <DependentUpon>pageRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageRegister.aspx.designer.cs">
+      <DependentUpon>pageRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANTRI\adminSite.Master.cs">
+      <DependentUpon>adminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\adminSite.Master.designer.cs">
+      <DependentUpon>adminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="QUANTRI\DEMO.aspx.cs">
+      <DependentUpon>DEMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\DEMO.aspx.designer.cs">
+      <DependentUpon>DEMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QUANTRI\pageAdmin.aspx.cs">
+      <DependentUpon>pageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\pageAdmin.aspx.designer.cs">
+      <DependentUpon>pageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QUANTRI\pageDANHMUC.aspx.cs">
+      <DependentUpon>pageDANHMUC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\pageDANHMUC.aspx.designer.cs">
+      <DependentUpon>pageDANHMUC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QUANTRI\pagelogin.aspx.cs">
+      <DependentUpon>pagelogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\pagelogin.aspx.designer.cs">
+      <DependentUpon>pagelogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QUANTRI\pageQUANLYSANPHAM.aspx.cs">
+      <DependentUpon>pageQUANLYSANPHAM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\pageQUANLYSANPHAM.aspx.designer.cs">
+      <DependentUpon>pageQUANLYSANPHAM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QUANTRI\QUANLINGUOIDUNG.aspx.cs">
+      <DependentUpon>QUANLINGUOIDUNG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QUANTRI\QUANLINGUOIDUNG.aspx.designer.cs">
+      <DependentUpon>QUANLINGUOIDUNG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTERPAGE.Master.cs">
+      <DependentUpon>USERMASTERPAGE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTERPAGE.Master.designer.cs">
+      <DependentUpon>USERMASTERPAGE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="USERMASTERPAGE.Master" />
+    <Content Include="QUANTRI\adminSite.Master" />
+    <Content Include="QUANTRI\assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="QUANTRI\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="QUANTRI\assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="QUANTRI\assets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="QUANTRI\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="QUANTRI\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="QUANTRI\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="QUANTRI\.htaccess" />
+    <Content Include="QUANTRI\LICENSE" />
+    <Content Include="QUANTRI\README.md" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29216</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:29216/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
